@@ -51,3 +51,7 @@ app.listen(3000, () => {
 
 });
 
+const userRoutes = require('./routes/user.route');
+
+
+app.use('/api/users', userRoutes);
