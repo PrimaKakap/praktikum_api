@@ -1,23 +1,14 @@
 const express = require('express');
-
 const router = express.Router();
-
 const transactionController = require('../controllers/transaction.controller');
 
-
-// GET semua transaksi (termasuk user & produk)
-
+// baris 7
 router.get('/', transactionController.getAll);
 
-
-// GET transaksi berdasarkan ID
-
+// baris 10 (Coba cek di sini, apakah nama fungsinya sama persis?)
 router.get('/:id', transactionController.getById);
 
-
-// POST buat transaksi baru
-
+// baris 13
 router.post('/', transactionController.create);
-
 
 module.exports = router;

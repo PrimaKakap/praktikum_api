@@ -16,7 +16,8 @@ app.get('/', (req, res) => res.send('API aktif!'));
 
 // tambahkan routing kamu dibawah sini
 
-
+const eventRoutes = require('./routes/event.routes')
+app.use('/api/events', eventRoutes);
 
 // Koneksi ke database
 
